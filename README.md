@@ -1,6 +1,8 @@
 # belajar-termux
 tentang belajar termux
 
+SC ini dibuat untuk mengirimkan pesan dengan inverval 9 menit sekali ke group dogetip
+
 Persiapan
 
 pip3 install -U telethon --user
