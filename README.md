@@ -1,4 +1,4 @@
-# belajar-termux
+# doge-tip
 tentang belajar termux
 
 SC ini dibuat untuk mengirimkan pesan dengan inverval 9 menit sekali ke group dogetip
