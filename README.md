@@ -11,3 +11,5 @@ python3 -c "import telethon; print(telethon.__version__)"
 
 
 Dapatkan api dan api hash telegram https://my.telegram.org/auth
+
+Siapkan juga verifikasi nomor hape untuk login telegram.
