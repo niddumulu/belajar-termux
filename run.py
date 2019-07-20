@@ -1,9 +1,25 @@
+import os
+import time
 from config import *
 
-#kirimpesan = input('Mau mengirim pesan apa? ')
-#kirimke = input('Masukkan username atau group : ')
+seconds= float(0)
+minutes= int(0)
+hours= int(0)
 
-with TelegramClient('anon', api_id, api_hash) as client: client.send_message('niddumulu', "tokobaju")
-#client.send_message('kirimke', kirimpesan)
-
-print ('Pesan terkirim')
+run = input("Enter r : ")
+while run.lower()=="r":
+  if seconds > 10:
+      seconds = 0
+      minutes = minutes+1
+      with TelegramClient('anon', api_id, api_hash) as client: client.send_message('niddumulu', "keren")
+      print ('Pesan terkirim')     
+  if minutes > 10:
+     minutes = 0
+     hours = hours+1
+       
+  #os.system('clear')
+  #from coba import *
+  seconds = (seconds+1)
+  print (hours," : ",minutes," : ", seconds)
+  #print (seconds)
+  time.sleep(1)
