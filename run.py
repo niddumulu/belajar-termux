@@ -8,18 +8,18 @@ hours= int(0)
 
 run = input("Enter r : ")
 while run.lower()=="r":
-  if seconds > 10:
-      seconds = 0
-      minutes = minutes+1
+  if seconds < 1:
+      seconds = 540
+      minutes = minutes-1
       with TelegramClient('anon', api_id, api_hash) as client: client.send_message('niddumulu', "keren")
-      print ('Pesan terkirim')     
-  if minutes > 10:
+      #print ('Pesan terkirim')     
+  if minutes > 60:
      minutes = 0
      hours = hours+1
        
-  #os.system('clear')
+  os.system('clear')
   #from coba import *
-  seconds = (seconds+1)
-  print (hours," : ",minutes," : ", seconds)
-  #print (seconds)
+  seconds = (seconds-1)
+  #print (hours," : ",minutes," : ", seconds)
+  print (seconds)
   time.sleep(1)
