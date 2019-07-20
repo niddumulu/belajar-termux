@@ -11,7 +11,7 @@ while run.lower()=="r":
   if seconds < 1:
       seconds = 540
       minutes = minutes-1
-      with TelegramClient('anon', api_id, api_hash) as client: client.send_message('niddumulu', "keren")
+      with TelegramClient('anon', api_id, api_hash) as client: client.send_message('dogetipbotgroup', "be active here guys")
       #print ('Pesan terkirim')     
   if minutes > 60:
      minutes = 0
