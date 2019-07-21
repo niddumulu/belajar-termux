@@ -6,8 +6,9 @@ seconds= float(0)
 minutes= int(-1)
 hours= int(0)
 
-run = input("Enter r : ")
-while run.lower()=="r":
+aiditele = input("Id telegram or group sasaran: ")
+run = input("Ketik pass, dia : ")
+while run.lower()=="dia":
   if seconds > 529:
       seconds = 0
       minutes = minutes+1      
@@ -17,7 +18,7 @@ while run.lower()=="r":
       dataok = (puisi[baris])
       print (dataok)
       my_file.close()
-      with TelegramClient('anon', api_id, api_hash) as client: client.send_message('niddumulu',dataok)
+      with TelegramClient('anon', api_id, api_hash) as client: client.send_message(aiditele,dataok)
       #print ('Pesan terkirim')
   if minutes > 8 :
      minutes = -1
